@@ -1,0 +1,46 @@
+﻿@model IEnumerable<OlympiadTest.Models.BankOfQuestion>
+@{ 
+    ViewData["Title"] = "Банк вопросов";
+}
+<h1>Вопросы</h1>
+<table style="width : 100%;">
+    <tr>
+        <td>ID Вопроса</td>
+        <td>ID Теста</td>
+        <td>Вопрос</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>Правильный вариант</td>
+    </tr>
+    @foreach(var question in Model)
+    {
+    <tr>
+        <td>@question.ID_Question</td>
+        <td>@question.ID_Test</td>
+        <td>@question.Question</td>
+        <td>@question.FirstOption</td>
+        <td>@question.SecondOption</td>
+        <td>@question.ThirdOption</td>
+        <td>@question.FourthOption</td>
+        <td>@question.FithOption</td>
+        <td>@question.SixthOption</td>
+        <td>@question.SeventhOption</td>
+        <td>@question.EighthOption</td>
+        <td>@question.NinthOption</td>
+        <td>@question.TenthOption</td>
+        <td>@question.EleventhOption</td>
+        <td>@question.TwelfthOption</td>
+        <td>@question.RightOption</td>
+    </tr>
+    }
+</table>
